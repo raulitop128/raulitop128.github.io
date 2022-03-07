@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Title" content="Contacto"/>
+    <meta name="copyright" content="Raúl Caravaca Sánchez"/>
+    <meta name="author" content="Raúl Caravaca Sánchez"/>
+    <link href="../css/estilos.css" rel="stylesheet">
+    <link href="../images/favicon.png" rel="icon" type="image/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="padre">
+        <header class="header">
+            <div class="menu margen-interno">
+                <div class="logo">
+                    <a href="../index.html"><img src="../images/logo_transparent_ccexpress.png" alt="logo"></a>
+                </div>
+                <div class="nav">
+                    <a href="../portfolio/about_us.html"><i class="fa fa-user"></i><span class="off">Nosotros</span></a>
+                    <a href="../portfolio/unete.html"><i class="fa fa-phone"></i><span class="off">Contacto</span></a>
+                    <a href="../portfolio/nuestra_musica.html"><i class="fa fa-music"></i><span class="off">Música</span></a>
+                </div>
+                <div class="social">
+                    <a href="https://www.iesjuanbosco.es/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.iesjuanbosco.es/"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="texto-principal margen-interno">
+                <blockquote><h1>La música expresa lo que no puede ser dicho y aquello sobre lo que es imposible permanecer en silencio</h1></blockquote>
+            </div>
+        </header>
+        <section class="section margen-interno">
+            <div class="articulos">
+                <article class="article">
+                    <h2>Contacto</h2>
+            <form action="datos.php" method="post" id="formu">
+                <label for="nombre">Nombre<input id="nombre" name="nombre" type="text" required></label><br><br>
+                <label for="apellidos">Apellidos<input id="apellidos" name="apellidos" type="text"></label><br><br>   
+                <label for="presu">Presupuesto<input type="number" id="presu" name="presu" min="100" max="1000" ></label> <br><br>         
+                <label for="email">Email<input type="email" id="email" name="email" required></label><br><br>
+                <label for="fecha">Fecha de Nacimiento: <input id="fecha" name="fecha" type="date" required></label><br><br>
+                <p>Suele Consumir: <input  type="radio" name="instru" value="G" checked>Guitarra <input type="radio" name="instru" value="B">Batería <input type="radio" name="instru" value="A">Bajo</p>
+                <label class="checkcopyright"><input type="checkbox" name="copyright" id="copyright" class="check">Todos los datos recogidos serán almacenados en una base de datos...</label><br><br>
+                <div id="form_group_enviar">
+                    <button type="submit" name="enviar">Enviar</button>
+                </div>
+            </form>
+            
+                </article>
+                
+            </div>
+            <aside class="aside">
+                <h4>Lugar de Ensayo</h4>
+                <div class="mapa" style="width:100%"><iframe width="100" height="600"   src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Santiago%20Bernabeu+(Lugar%20de%20Ensayos)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+            </aside>
+        </section>
+        <footer class="footer margen-interno">
+            <div class="pie">
+                <address>Creado por @Raulitop128 <a href="#" onclick="window.scrollTo(0,0)">  Subir</a></address>
+            </div>
+        </footer>
+    </div>     
+</body>
+</html>
